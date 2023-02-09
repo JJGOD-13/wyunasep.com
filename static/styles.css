@@ -15,8 +15,10 @@ section{
 
 }
 
-.blue {
+.title {
     background-color: rgb(24, 24, 184);
+    display: flex;
+    align-items: start;
 }
 
 .red {
@@ -31,6 +33,7 @@ section{
     background-color: rgb(255, 0, 255);
 }
 
+/* Svg Blue Wave */
 .wave {
     position: absolute;
     top: 0;
@@ -51,7 +54,7 @@ section{
     fill: #1818B8;
 }
 
-
+/* Menu Icon and Navbar */
 .material-symbols-outlined {
     color: whitesmoke;
     font-variation-settings:
@@ -70,4 +73,18 @@ section{
 }
 .navbar-brand:hover {
     color: whitesmoke;
+}
+
+/* Title Boxing */
+
+.fittheheight {
+    height: 100vh;
+}
+.half {
+    position: relative;
+    width: 50%;
+}
+.right-pad-8 {
+    padding-right: 2em;
+    
 }
