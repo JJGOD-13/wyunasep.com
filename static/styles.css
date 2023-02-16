@@ -6,19 +6,24 @@ body {
 }
 
 section{
+    overflow: hidden;
     position: relative;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 400px;
-    padding: 200px 20vw;
+    place-content: center;
+    align-content: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    
 
 }
 
 .title {
-    background-color: rgb(24, 24, 184);
+    background-color: #1818b8;
     display: flex;
     align-items: start;
+    
 }
 
 .red {
@@ -26,7 +31,8 @@ section{
 }
 
 .dark {
-    background-color: rgb(37, 37, 37);
+    background-color: #252525;    
+    
 }
 
 .pink {
@@ -54,6 +60,26 @@ section{
     fill: #1818B8;
 }
 
+/* Svg Black Wave */
+.wave2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 133px;
+}
+.wave2 .shape-fill {
+    fill: #252525;
+}
+
 /* Menu Icon and Navbar */
 .material-symbols-outlined {
     color: whitesmoke;
@@ -75,7 +101,7 @@ section{
     color: whitesmoke;
 }
 
-/* Title Boxing */
+/* logo Boxing */
 
 .fittheheight {
     height: 100vh;
@@ -84,7 +110,62 @@ section{
     position: relative;
     width: 50%;
 }
-.right-pad-8 {
-    padding-right: 2em;
+.position {
+    padding-right: 0;
+    padding-left: 30vh;
+    padding-top: 30vh;
+    
+}
+
+/* animation from hidden to show */
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+    filter: blur(5px);
+    transform: translateX(100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* sponsors */
+/* center the text */
+.sponsor-head {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+/* make all the sponsor images appear as a brands that use the service */
+.sponsors {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 8rem;
+  
+}
+
+.sponsor-image {
+    height: 50px;
+    filter:  grayscale(100%) contrast(); 
+    margin: 2rem;
+
+}
+.background {
+    background-image: url(https://wyunasep.com/images/banner/banner1.jpg);
+    height: 100vh;
+    float: right;
+    width: 50%;
+    position: absolute;
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     
 }
