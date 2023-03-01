@@ -188,3 +188,39 @@ section{
     background-color: #252525;
     color: whitesmoke;
 }
+
+/* Footer */
+footer {
+    background-color: #1818b8;
+    color: #f5f5f5;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.footer-icons :nth-child(1) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+
+    
+}
+.icon {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    height: 75px;
+    width: px;
+}
+
+/* Contact Button */
+.contact-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 30vh;
+}

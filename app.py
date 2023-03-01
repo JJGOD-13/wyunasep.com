@@ -1,17 +1,18 @@
-import flask
+from flask import *
 
-app = flask.Flask(__name__)
+app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return flask.render_template('index.html')
+    return render_template('index.html')
 
 @app.route('/about')
 def about():
     return "TODO"
     # need to make an about page
 
-@app.route('/contact')
+@app.route('/contact', methods= ['GET', 'POST'])
 def contact():
-    return "TODO"
-    # need to make a contact page with a form
+    if request.method == 'GET':
+        return render_template('contact.html')
+
