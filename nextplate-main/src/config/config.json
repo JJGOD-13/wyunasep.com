@@ -13,9 +13,9 @@
   },
 
   "settings": {
-    "search": true,
+    "search": false,
     "sticky_header": true,
-    "theme_switcher": true,
+    "theme_switcher": false,
     "default_theme": "light",
     "pagination": 2,
     "summary_length": 200,
@@ -27,11 +27,11 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
+    "copyright": "WyunaSep"
   },
 
   "navigation_button": {
-    "enable": true,
+    "enable": false,
     "label": "Get Started",
     "link": "https://github.com/zeon-studio/nextplate"
   },
@@ -43,7 +43,7 @@
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "WyunaSep",
     "meta_image": "/images/og-image.png",
     "meta_description": "Next Boilerplate"
   }

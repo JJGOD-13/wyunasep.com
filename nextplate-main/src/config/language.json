@@ -6,9 +6,10 @@
     "weight": 1
   },
   {
-    "languageName": "Fr",
-    "languageCode": "fr",
-    "contentDir": "french",
+    "languageName": "Hi",
+    "languageCode": "hi",
+    "contentDir": "hindi",
     "weight": 2
+
   }
 ]

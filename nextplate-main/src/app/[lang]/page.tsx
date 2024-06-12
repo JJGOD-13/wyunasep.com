@@ -50,7 +50,7 @@ const Home = ({ params }: { params: { lang: string } }) => {
       <section className="section pt-14">
         <div className="container">
           <div className="row justify-center">
-            <div className="lg:col-7 md:col-9 mb-8 text-center">
+            <div className="lg:col-7 md:col-9 mb-8 text-center z-40">
               <h1
                 className="mb-4 text-h3 lg:text-h1"
                 dangerouslySetInnerHTML={markdownify(banner.title)}
@@ -59,7 +59,7 @@ const Home = ({ params }: { params: { lang: string } }) => {
                 className="mb-8"
                 dangerouslySetInnerHTML={markdownify(banner.content ?? "")}
               />
-              {banner.button!.enable && (
+              {/* {banner.button!.enable && (
                 <Link
                   className="btn btn-primary"
                   href={banner.button!.link}
@@ -70,10 +70,9 @@ const Home = ({ params }: { params: { lang: string } }) => {
                 >
                   {banner.button!.label}
                 </Link>
-              )}
+              )} */}
             </div>
             {banner.image && (
-              <div className="col-12">
                 <ImageFallback
                   src={banner.image}
                   className="mx-auto"
@@ -82,7 +81,6 @@ const Home = ({ params }: { params: { lang: string } }) => {
                   alt="banner image"
                   priority
                 />
-              </div>
             )}
           </div>
         </div>
