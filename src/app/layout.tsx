@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+// TODO: Find a way to add Helvetica Neue
+
+const inter = Roboto({
+  subsets: ["latin"],
+  weight: "500"
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
