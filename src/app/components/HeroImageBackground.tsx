@@ -9,16 +9,15 @@ export function HeroImageBackground() {
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Automated AI code reviews for{' '}
-          <Text component="span" inherit className={classes.highlight}>
-            any stack
-          </Text>
+        Giving Water A Second {' '}
+        <Text component='span' variant='gradient' gradient={{from: 'white', to: 'blue'}} inherit>
+        Chance
+        </Text>
         </Title>
 
-        <Container size={640}>
+        <Container fluid={true}>
           <Text size="lg" className={classes.description}>
-            Build more reliable software with AI companion. AI is also trained to detect lazy
-            developers who do nothing and just complain on Twitter.
+          India's Leading Solution For Oil Water Seperators
           </Text>
         </Container>
 

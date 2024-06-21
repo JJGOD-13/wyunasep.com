@@ -5,6 +5,7 @@ import '@mantine/core/styles.css';
 
 import { ColorSchemeScript, createTheme, MantineProvider, DEFAULT_THEME } from '@mantine/core';
 import {HeaderMenu}   from './components/HeaderMenu';
+import { FooterSimple } from './components/FooterSimple';
 
 export const metadata = {
   title: 'My Mantine app',
@@ -22,7 +23,7 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider theme={DEFAULT_THEME} defaultColorScheme='dark'>
+        <MantineProvider theme={DEFAULT_THEME}>
           <header>
           <nav>
           <HeaderMenu />
@@ -31,6 +32,10 @@ export default function RootLayout({
 
 
           {children}
+
+          <footer>
+            <FooterSimple />
+          </footer>
           
         </MantineProvider>
       </body>

@@ -1,10 +1,12 @@
 .wrapper {
     position: relative;
-    padding-top: rem(180px);
-    padding-bottom: rem(130px);
-    background-image: url(https://images.unsplash.com/photo-1573164713988-8665fc963095?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=980&q=80);
+    padding-top: rem(300px);
+    padding-bottom: 100%;
+    background-image: url('../../../public/images/WyunaOilDrop.jpg');
+    background-blend-mode: color;
     background-size: cover;
     background-position: center;
+    min-height: 100%;
   
     @media (max-width: $mantine-breakpoint-xs) {
       padding-top: rem(80px);
@@ -15,11 +17,12 @@
   .inner {
     position: relative;
     z-index: 1;
+    min-height: 100%;
   }
   
   .title {
-    font-weight: 800;
-    font-size: rem(40px);
+    font-weight: 900;
+    font-size: rem(64px);
     letter-spacing: rem(-1px);
     padding-left: var(--mantine-spacing-md);
     padding-right: var(--mantine-spacing-md);
