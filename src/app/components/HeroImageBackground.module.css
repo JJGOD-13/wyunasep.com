@@ -1,7 +1,7 @@
 .wrapper {
     position: relative;
     padding-top: rem(300px);
-    padding-bottom: 100%;
+    padding-bottom: rem(300px);
     background-image: url('../../../public/images/WyunaOilDrop.jpg');
     background-blend-mode: color;
     background-size: cover;

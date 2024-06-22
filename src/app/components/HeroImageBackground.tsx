@@ -1,6 +1,8 @@
 import cx from 'clsx';
-import { Title, Text, Container, Button, Overlay } from '@mantine/core';
+import { Flex, Title, Text, Container, Button, Overlay } from '@mantine/core';
 import classes from './HeroImageBackground.module.css';
+import Link from 'next/link';
+import Product from './ProductOverview';
 
 export function HeroImageBackground() {
   return (
@@ -10,7 +12,7 @@ export function HeroImageBackground() {
       <div className={classes.inner}>
         <Title className={classes.title}>
         Giving Water A Second {' '}
-        <Text component='span' variant='gradient' gradient={{from: 'white', to: 'blue'}} inherit>
+        <Text component='span' variant='text' gradient={{from: 'white', to: 'blue'}} inherit>
         Chance
         </Text>
         </Title>
@@ -22,14 +24,14 @@ export function HeroImageBackground() {
         </Container>
 
         <div className={classes.controls}>
-          <Button className={classes.control} variant="white" size="lg">
-            Get started
+        <Link href='/contact'>
+          <Button className={classes.control} variant="blue" size="lg" radius="md">
+            Get Quote
           </Button>
-          <Button className={cx(classes.control, classes.secondaryControl)} size="lg">
-            Live demo
-          </Button>
+        </Link>
         </div>
       </div>
     </div>
+   
   );
 }
