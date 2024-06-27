@@ -1,5 +1,6 @@
+import Clients from "@/components/Clients";
 import Hero from "@/components/Hero";
-import Product from "@/components/ProductOutline";
+import { Product, OilSkimmer} from "@/components/ProductOutline";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +8,8 @@ export default function Home() {
     <main className="">
       <Hero />
       <Product />
+      <OilSkimmer />
+      <Clients />
 
     </main>
   );
