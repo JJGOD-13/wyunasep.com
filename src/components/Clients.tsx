@@ -18,7 +18,7 @@ export default async function Clients() {
                 <div className=" flex justify-around w-full p-10 align-baseline"> 
                     {ImageList.map((image: { default: string | StaticImport; }, index: any) => (
                         <>
-                        <div className=" relative w-[50px] h-[50px] align-middle  grayscale-[90%] md:w-[100px] md:h-[100px] md:pt-10 md:pb-10">
+                        <div className=" relative w-[50px] h-[50px] align-middle  grayscale-[90%] md:w-[80px] md:h-[80px] md:pt-10 md:pb-10">
                         <Image src={image.default} alt={`image-${index}`}    />
                         </div>
                         </>

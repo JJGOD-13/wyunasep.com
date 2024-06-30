@@ -1,3 +1,4 @@
+import GetAQuote from "@/components/GetAQuote";
 import Clients from "@/components/Clients";
 import Hero from "@/components/Hero";
 import { Product, OilSkimmer} from "@/components/ProductOutline";
@@ -10,6 +11,7 @@ export default function Home() {
       <Product />
       <OilSkimmer />
       <Clients />
+      <GetAQuote />
 
     </main>
   );
