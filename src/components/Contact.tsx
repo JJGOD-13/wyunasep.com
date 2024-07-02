@@ -2,6 +2,7 @@
 import { useFormState, useFormStatus } from "react-dom"
 import { sendEnquiry } from "@/app/sendEnquiry"
 import clsx from 'clsx';
+import { useRef } from "react";
 
 const initialState = {
 
@@ -13,36 +14,44 @@ const initialState = {
 
 export default function Contact() {
     const [ state, formAction ] = useFormState( sendEnquiry, initialState );
+    const ref = useRef<HTMLFormElement>(null)
 
+
+    // Checking if the form was properly processed.
+    if (state.code === 0){
+        ref.current?.reset()
+    }
 
     return (
-        <div className=" min-h-fit rounded-xl ">
-            <form action={ formAction } method="post" className=" grid grid-cols-1 gap-5 justify-center justify-items-center">
+        <div className=" min-h-fit rounded-xl "> 
+            <form  ref={ref} id="contactForm"  action={ formAction } method="post" className=" grid grid-cols-1 gap-5 justify-center justify-items-center">
 
-                <label className=" form-control w-full max-w-xs gap-1">
+                <div className=" form-control w-full max-w-xs gap-1">
                     <div className=" label ">
                         <span className=" label-text"> Name </span>
                     </div>
-                    <input required type="text" name="name" id="name" className=" input input-bordered input-sm  w-full max-w-xs required  required:outline-error valid:outline-success "/>
+                    <input  required type="text" name="name" id="name" className=" input input-bordered input-sm  w-full max-w-xs required  required:outline-error valid:outline-success "/>
 
                     <div className=" label ">
                         <span className=" label-text"> Email </span>
                     </div>
-                    <input required type="email" id="email" name="email" className=" input input-bordered input-sm  w-full max-w-xs invalid:outline-error valid:outline-success" />
+                    <input  required type="email" id="email" name="email" className=" input input-bordered input-sm  w-full max-w-xs invalid:outline-error valid:outline-success" />
 
                     <div className=" label ">
                         <span className=" label-text"> Description </span>
                     </div>
-                    <input required type="text" id="description" name="text" className=" textarea textarea-bordered textarea-lg w-full max-w-md md:textarea-lg  required:outline-error" />
+                    {/* Maybe make all of the required things only appear after an initial failure from the server. */}
+                    <input   required  type="text" id="description" name="text" className=" textarea textarea-bordered textarea-sm w-full max-w-md md:textarea-md md:p-5 required:outline-error valid:outline-success" />
 
                     <div className=" label ">
                         <span className=" label-text"> Attachments </span>
                     </div>
                     <input type="file" id="file" name="file" className=" file-input file-input-bordered file-input-sm " />
-                </label>
+                </div>
                 <div className=" p-5 gap-2 flex flex-col justify-center">
 
-                <SubmitButton />
+                <input  type="submit" className=" btn " />
+                {/* <SubmitButton /> */}
 
                 <p  className={clsx(
                     ' text-center ', 
