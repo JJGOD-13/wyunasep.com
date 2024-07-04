@@ -5,3 +5,4 @@ src/gatsby-types.d.ts
 .next/
 .next
 .next
+.env/
