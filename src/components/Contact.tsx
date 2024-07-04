@@ -24,7 +24,7 @@ export default function Contact() {
 
     return (
         <div className=" min-h-fit rounded-xl "> 
-            <form  ref={ref} id="contactForm"  action={ formAction } method="post" className=" grid grid-cols-1 gap-5 justify-center justify-items-center">
+            <form noValidate ref={ref} id="contactForm"  action={ formAction } method="post" className=" grid grid-cols-1 gap-5 justify-center justify-items-center">
 
                 <div className=" form-control w-full max-w-xs gap-1">
                     <div className=" label ">
@@ -35,7 +35,7 @@ export default function Contact() {
                     <div className=" label ">
                         <span className=" label-text"> Email </span>
                     </div>
-                    <input  required type="email" id="email" name="email" className=" input input-bordered input-sm  w-full max-w-xs invalid:outline-error valid:outline-success" />
+                    <input   type="email" id="email" name="email" className=" input input-bordered input-sm  w-full max-w-xs invalid:outline-error valid:outline-success" />
 
                     <div className=" label ">
                         <span className=" label-text"> Description </span>
@@ -50,8 +50,8 @@ export default function Contact() {
                 </div>
                 <div className=" p-5 gap-2 flex flex-col justify-center">
 
-                <input  type="submit" className=" btn " />
-                {/* <SubmitButton /> */}
+                {/* <input  type="submit" className=" btn " /> */}
+                <SubmitButton />
 
                 <p  className={clsx(
                     ' text-center ', 
