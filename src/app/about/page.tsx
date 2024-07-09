@@ -18,8 +18,8 @@ export default function About() {
       <div className="hero   min-h-screen bg-base-100  rounded-xl ">
         <div className="hero-content max-w-xl text-center">
           <div className="">
-            <h1 className=" text-4xl md:text-5xl font-bold">Better seperation solutions</h1>
-            <p className="py-6"> Wyuna Seperation Technologies is India's premier liquid seperation solutions provider.</p>
+            <h1 className=" text-4xl md:text-5xl text-nowrap font-bold">Better seperation solutions</h1>
+            <p className="py-6 text-neutral-content"> Wyuna Seperation Technologies is India's premier liquid seperation solutions provider.</p>
           </div>
         </div>
       </div>
@@ -31,8 +31,8 @@ export default function About() {
                 <h2 className=" text-4xl md:font-bold justify-center md:justify-start   ">Core Principle</h2>
             </div>
             <div className=" max-w-xl text-pretty ">
-                <p className=" py-8 text-sm md:text-md md:py-6 font-thin ">Since the Company’s beginning, Wyuna Separation Technology name has gone hand in hand with invention, flexibility and adaptability, qualities that allow us to anticipate trends and respond with creative ideas. These qualities have been hallmarks of the WyunaSep business since its founding members foresaw the advent of the Hydrocyclones and wisely diversified into innovative engineered products.</p>
-                <p className=" py-8 text-sm md:text-md md:py-6 font-thin ">More than just products, but a promise, Wyuna Separation Technology says “The proof of the product is in the performance” and it’s a commitment we apply in our relationships with everyone important to our business. Wyuna Separation Technology is focussed on ensuring it’s more than a supplier of goods but, importantly, a partner in a process that seeks to continually deliver the newest and most exciting solutions to our markets.</p>
+                <p className=" py-8 text-sm lg:text-lg md:py-6 font-thin lg:text-neutral-content">Since the Company’s beginning, Wyuna Separation Technology's name has gone hand in hand with invention, flexibility and adaptability, qualities that allow us to anticipate trends and respond with creative ideas. These qualities have been hallmarks of the WyunaSep business since its founding members foresaw the advent of the Hydrocyclones and wisely diversified into innovative engineered products.</p>
+                <p className=" py-8 text-sm lg:text-lg md:py-6 font-thin lg:text-neutral-content">More than just products, but a promise, Wyuna Separation Technology says “The proof of the product is in the performance” and it’s a commitment we apply in our relationships with everyone important to our business. Wyuna Separation Technology is focussed on ensuring it’s more than a supplier of goods but, importantly, a partner in a process that seeks to continually deliver the newest and most exciting solutions to our markets.</p>
             </div>
           </div>
         </div>
