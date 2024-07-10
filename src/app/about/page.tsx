@@ -28,7 +28,7 @@ export default function About() {
         <div className=" justify-center p-20  flex md:justify-start  md:bg-base-300 md:min-h-screen md:rounded-xl md:p-40   ">
           <div className="">
             <div className=" max-w-xl ">
-                <h2 className=" text-4xl md:font-bold justify-center md:justify-start   ">Core Principle</h2>
+                <h2 className=" text-4xl md:font-bold justify-center md:justify-start ">Core Principle</h2>
             </div>
             <div className=" max-w-xl text-pretty ">
                 <p className=" py-8 text-sm lg:text-lg md:py-6 font-thin lg:text-neutral-content">Since the Company’s beginning, Wyuna Separation Technology's name has gone hand in hand with invention, flexibility and adaptability, qualities that allow us to anticipate trends and respond with creative ideas. These qualities have been hallmarks of the WyunaSep business since its founding members foresaw the advent of the Hydrocyclones and wisely diversified into innovative engineered products.</p>
