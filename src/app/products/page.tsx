@@ -10,19 +10,19 @@ const products = [
     title: "Hydrocyclone",
     description: "Our State of the art product delivering preicse seperation for almost all needs.",
     image: "link/to/image",
-    link: "/blog/hydrocyclone"
+    link: "/blog/Hydrocyclone"
 },
 {
     title: "Oil Skimmer",
     description: "Our best Oil Skimmer Product.",
     image: "link/to/image",
-    link: "/blog/skimmer"
+    link: "/blog/Oil_Skimmer"
 },
 {
     title: "Floating Skimmer",
     description: "Floating skimmer to allow for different use cases.",
     image: "link/to/image",
-    link: "/blog/floatingskimmer"
+    link: "/blog/Floating_Skimmer"
 }
 ]
 

@@ -1,5 +1,4 @@
 import getMarkdownData from "@/components/getMarkdownData"
-import { link } from "fs/promises"
 import Link from "next/link"
 
 const postData = getMarkdownData('blogposts/')
