@@ -2,8 +2,8 @@ import getMarkdownData from "@/components/getMarkdownData"
 import { get } from "http"
 import fs from 'fs'
 import matter from "gray-matter"
-import '@/app/blog/[slug]/style.css'
 import Markdown from "markdown-to-jsx"
+import { Heading, SubHeading, Paragraph } from "./styles"
 
 function getPostContent(slug: string) {
     const path_to_file = `blogposts/${slug}.md`
@@ -32,8 +32,10 @@ export default async function Blog( props ) {
 
     return (
         <main className=" p-10">
-            <div className=" flex flex-auto  gap-10   ">
-                <Markdown>{post.content}</Markdown>
+            <div className=" flex flex-auto  gap-10 text-pre  ">
+                <Markdown options={{
+                    overrides: { h1: { component: Heading } , h2: { component: SubHeading}, p: { component: Paragraph}}
+                }}>{post.content}</Markdown>
 
             </div>
         </main>
