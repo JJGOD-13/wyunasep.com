@@ -14,17 +14,17 @@ const pageHTML = pagedata.value;
 
 export default function About() {
   return (
-    <><section className=" flex bg-base-200  ">
-      <div className="hero   min-h-screen bg-base-100  rounded-xl ">
+    <><section className=" flex justify-center bg-base-100 text-base-content  ">
+      <div className="hero   min-h-screen bg-neutral  rounded-xl ">
         <div className="hero-content max-w-xl text-center">
           <div className="">
-            <h1 className=" text-4xl md:text-5xl text-nowrap font-bold">Better seperation solutions</h1>
+            <h1 className=" text-4xl  md:text-5xl md:text-nowrap  md:font-bold ">Better seperation solutions</h1>
             <p className="py-6 text-neutral-content"> Wyuna Seperation Technologies is India's premier liquid seperation solutions provider.</p>
           </div>
         </div>
       </div>
     </section>
-      <section>
+      <section className=" bg-neutral text-base-content">
         <div className=" justify-center p-20  flex md:justify-start  md:bg-base-300 md:min-h-screen md:rounded-xl md:p-40   ">
           <div className="">
             <div className=" max-w-xl ">

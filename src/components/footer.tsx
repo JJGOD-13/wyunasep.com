@@ -1,7 +1,7 @@
 import Link from 'next/link'
 export default function Footer() {
     return (
-        <footer className="footer p-10 text-neutral-content bg-neutral">
+        <footer className="footer p-10 text-base-content bg-base-300">
             <nav>
                 <h6 className="footer-title">Company</h6>
                 <Link href='/about' className='link link-hover'>About us</Link>

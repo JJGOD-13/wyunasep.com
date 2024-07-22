@@ -1,7 +1,7 @@
 import Contact from "./Contact"
 export default function GetAQuote() {
     return (
-        <section className=" min-h-screen" >
+        <section className=" min-h-screen bg-neutral text-base-content " >
             <div className=" flex flex-col justify-center p-10">
 
                 <div className=" flex justify-center capitalize p-10 ">

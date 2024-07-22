@@ -11,14 +11,14 @@ export default async function Clients() {
     const images = require.context('/public/Logos', true)
     const ImageList = images.keys().map( (image: any) => images(image))
     return (
-        <section className="  h-1/3 p-10 min-h-56 ">
+        <section className="  h-1/3 p-10 min-h-56 bg-neutral text-base-content ">
             <div className=" flex flex-col items-center  justify-center h-1/2  ">
                 <h1 className=" capitalize font-bold text-5xl "> Our Clients  </h1>
 
                 <div className=" flex justify-around w-full p-10 align-baseline"> 
                     {ImageList.map((image: { default: string | StaticImport; }, index: any) => (
                         <>
-                        <div className=" relative w-[50px] h-[50px] align-middle  grayscale-[90%] md:w-[80px] md:h-[80px] md:pt-10 md:pb-10">
+                        <div className=" relative w-[50px] h-[50px] align-middle   md:w-[80px] md:h-[80px] md:pt-10 md:pb-10">
                         <Image src={image.default} alt={`image-${index}`}    />
                         </div>
                         </>
