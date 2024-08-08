@@ -1,46 +1,83 @@
 import Link from "next/link";
 
+const goTo = (event: any) => {
+  event.preventDefault();
+  const btn = event.currentTarget;
+
+  const carousel = document.querySelector(".carousel");
+  const href = btn.getAttribute("href");
+  const target = carousel?.querySelector(href);
+  const left = target.offsetLeft;
+  carousel?.scrollTo({ left: left });
+};
+
 export default function Carousel() {
-    return (
-        <section className=" flex justify-center bg-neutral p-5  ">
-            <div >
-                <div className="carousel w-full">
-                    <Link href="/">
-                        <div id="item1" className="carousel-item w-full">
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
-                                className="w-full" />
-                        </div>
-                    </Link>
-                    <Link href={""}>
-                        <div id="item2" className="carousel-item w-full">
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-                                className="w-full" />
-                        </div>
-                    </Link>
-                    <Link href={""}>
-                        <div id="item3" className="carousel-item w-full">
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-                                className="w-full" />
-                        </div>
-                    </Link>
-                    <Link href={""}>
-                        <div id="item4" className="carousel-item w-full">
-                            <img
-                                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-                                className="w-full" />
-                        </div>
-                    </Link>
-                </div>
-                <div className="flex w-full justify-center gap-2 py-2">
-                    <a href="#item1" className="btn btn-xs">1</a>
-                    <a href="#item2" className="btn btn-xs">2</a>
-                    <a href="#item3" className="btn btn-xs">3</a>
-                    <a href="#item4" className="btn btn-xs">4</a>
-                </div>
-            </div>
-        </section>
-    )
+  return (
+    <div className="carousel carousel-center bg-neutral  ">
+      
+        <div className="carousel-item px-10">
+<Link href="/about">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+            alt="Pizza"
+          />
+</Link>
+        </div>
+      
+      
+        <div className="carousel-item px-10">
+<Link href="/">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+            alt="Pizza"
+          />
+</Link>
+        </div>
+      
+      
+        <div className="carousel-item px-10">
+<Link href="/">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+            alt="Pizza"
+          />
+</Link>
+        </div>
+      
+      
+        <div className="carousel-item px-10">
+<Link href="/">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
+            alt="Pizza"
+          />
+</Link>
+        </div>
+      
+      <div className="carousel-item px-10">
+<Link href="/">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+          alt="Pizza"
+        />
+</Link>
+      </div>
+      <div className="carousel-item px-10">
+<Link href="/">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
+          alt="Pizza"
+        />
+</Link>
+      </div>
+      <div className="carousel-item px-10">
+<Link href="">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+          alt="Pizza"
+        />
+</Link>
+      </div>
+    </div>
+  );
 }
