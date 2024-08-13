@@ -4,7 +4,7 @@ import Oildrop from '../../public/images/WyunaOilDrop.jpg'
 
 export default function Hero() {
   return (
-    <div className=" hero min-h-screen relative " >
+    <div className=" hero min-h-[40rem] md:min-h-screen relative " >
       <Image src={Oildrop} alt={'Oil Drop in water'} fill={true}  className=' object-cover  opacity-45 -z-1' />
       <div className='hero-overlay bg-opacity-60'></div>
       <div className='hero-content text-center '>

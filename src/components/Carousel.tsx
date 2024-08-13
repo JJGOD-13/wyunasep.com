@@ -13,7 +13,7 @@ const goTo = (event: any) => {
 
 export default function Carousel() {
   return (
-    <section className=" flex justify-center md:p-10  ">
+    <section className=" flex justify-center p-4 md:p-10  ">
       <div className="carousel carousel-center bg-neutral rounded-box max-w-screen space-x-4 p-4 gap-4">
         <div className="carousel-item">
           <img
