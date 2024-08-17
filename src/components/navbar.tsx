@@ -35,19 +35,18 @@ export default function NavBar() {
 export function NavbarLinks() {
   return (
     <>
-<li>
+<li key={0}>
         <Link href="/about" className='btn btn-ghost btn-sm font-normal'>About us</Link>
 </li>
 <li>
         <Link href="/products" className='btn btn-ghost btn-sm font-normal'>Products</Link>
 </li>
-<li>
+<li key={1}>
         <Link href="/blog" className='btn btn-ghost btn-sm font-normal'>Blog</Link>
 </li>
-<li>
+<li key={2}>
         <Link href="/contact" className='btn btn-ghost btn-sm font-normal'>Get Quote</Link>
 </li>
     </>
-
   )
 }
