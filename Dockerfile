@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:22-alipine3.19
 
 WORKDIR /app
 
