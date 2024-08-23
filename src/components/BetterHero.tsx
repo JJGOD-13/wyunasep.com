@@ -16,7 +16,7 @@ export default function BetterHero(){
 <div className=' flex flex-col pl-40 w-1/2 pb-40 gap-2 '>
 
       <div className=' font-extrabold text-5xl align-baseline capitalize overflow-x-visible'>
-      Giving water a second Chance
+      Giving water a second Chance 
       </div>
       <div className=' text-wrap'>India's Premiere Oil Water Water seperation solutions provider.</div>
 
