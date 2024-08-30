@@ -1,3 +1,4 @@
+import getMarkdownData from "@/components/getMarkdownData";
 import Link from "next/link"
 interface Product {
   title: string;
@@ -5,7 +6,7 @@ interface Product {
   image: string;
   link: string;
 }
-const products = [
+let products1 = [
 {
     title: "Hydrocyclone",
     description: "Our State of the art product delivering preicse seperation for almost all needs.",
@@ -23,8 +24,24 @@ const products = [
     description: "Floating skimmer to allow for different use cases.",
     image: "link/to/image",
     link: "/blog/Floating_Skimmer"
+},
+{
+  title: "Coolant Filter",
+  description: "Efficient Coolant Filtration for a wide range of applications.",
+  image: "@/public/images/Wyunasep Coolant Filtration.jpeg",
+  link: "/blog/Coolant_Filter"
+
 }
 ]
+
+
+const products: Product[] = getMarkdownData('blogposts/').map((data: any) => ({
+  title: data.title,
+  description: data.description,
+  image: data.image,
+  link: data.link,
+}));
+
 
 export default function Products() {
 
@@ -39,7 +56,7 @@ export default function Products() {
 }
 
 
-function DaisyCard({ product }: { product: Product }) {
+function DaisyCard({ product }: {product: Product}) {
 
   return (
     <div className=" card card-compact p-2 md:card-normal w-[300px]   bg-neutral h-fit md:h-[240px] md:w-[400px] text-base-content  ">
