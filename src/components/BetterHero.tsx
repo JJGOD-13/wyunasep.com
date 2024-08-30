@@ -1,6 +1,6 @@
 'use client'
 import '../styles/BetterHero.css'
-import bg from '../../public/images/WyunaOilDrop.jpg'
+import bg from '@/public/images/WyunaOilDrop.jpg'
 import Image from 'next/image';
 
 export default function BetterHero(){

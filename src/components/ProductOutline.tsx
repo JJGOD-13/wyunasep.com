@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Oildrop from '../../public/images/WyunaOilDrop.jpg'
+import Oildrop from '@/public/images/WyunaOilDrop.jpg'
 
 export  function Product() {
     return (

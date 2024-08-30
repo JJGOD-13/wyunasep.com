@@ -15,7 +15,9 @@ export default function getMarkdownData(pathtodir: string) {
     return {
       title: matterResult.data.title,
       description: matterResult.data.description,
-      slug: filename.replace('.md', '').replace('_', '-')
+      slug: filename.replace('.md', '').replace('_', '-'),
+      image: matterResult.data.image,
+      link: matterResult.data.link,
     };
 
   })
