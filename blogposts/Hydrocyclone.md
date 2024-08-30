@@ -1,6 +1,8 @@
 ---
-title : "Hydrocyclone"
-description : "Indias most performant Hydrocyclone"
+    title: "Hydrocyclone"
+    description: "Our State of the art product delivering preicse seperation for almost all needs."
+    image: "link/to/image"
+    link: "/blog/Hydrocyclone"
 
 ---
 

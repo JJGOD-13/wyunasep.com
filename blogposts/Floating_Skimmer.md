@@ -1,7 +1,8 @@
 ---
-title : "Floating Skimmer"
-description : "Indias most performant Floating Skimmer"
-
+title: "Floating Skimmer"
+description: "Floating skimmer to allow for different use cases."
+image: "link/to/image"
+link: "/blog/Floating_Skimmer"
 ---
 
 
