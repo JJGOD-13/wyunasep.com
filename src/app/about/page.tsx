@@ -66,7 +66,44 @@ export default function About() {
               <h2 className=" text-4xl md:font-bold justify-center md:justify-start ">
                 Our Vision
               </h2>
-              <div></div>
+              <div className=" py-8 text-md lg:text-lg md:py-6 font-thin lg:text-neutral-content">
+                <ul className=" list-disc  ">
+                  <li key={1}>
+                    To build a leading global business servicing the process
+                    industry using innovation to develop technology that
+                    provides tangible benefits for our customers.
+                  </li>
+                  <li key={1}>
+                    Since its establishment the purpose of the Company has been
+                    to increase the value of its shareholders’ investment by the
+                    generation of profits. The Company, through its employees,
+                    achieves this purpose by meeting the needs of customers for
+                    the products and services it offers.
+                  </li>
+                  <li key={1}>
+                    Since its establishment the purpose of the Company has been
+                    to increase the value of its shareholders’ investment by the
+                    generation of profits. The Company, through its employees,
+                    achieves this purpose by meeting the needs of customers for
+                    the products and services it offers.
+                  </li>
+                  <li key={1}>
+                    Wyuna Separation Technology places great emphasis on ethics
+                    that seek to minimise environmental impacts, in all aspects
+                    of our business, to the best of our ability. We understand
+                    that the industries we serve can potentially harm the
+                    quality of our earth / air and places a high priority in
+                    proactively identifying and responding to anticipated
+                    health, safety and environmental hazards. From the outset,
+                    we encourage partnerships between stakeholders, including
+                    our own teams of specialist engineers and consultants, our
+                    clients and the communities they serve, so that positive
+                    outcomes are achieved. We seek to fully comply with all
+                    government, industry and other codes to ensure we meet our
+                    obligations.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
