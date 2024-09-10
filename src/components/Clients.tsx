@@ -22,7 +22,7 @@ export default async function Clients() {
                   <Image src={image.default} alt={`image-${index}`} />
                 </div>
               </>
-            )
+            ),
           )}
         </div>
       </div>

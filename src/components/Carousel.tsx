@@ -1,6 +1,6 @@
 import Link from "next/link";
-import coolantFilter from '@/public/images/Wyunasep Coolant Filtration.jpeg'
-import oilSkimmer from '@/public/images/Oil Skimmer.jpg'
+import coolantFilter from "@/public/images/Wyunasep Coolant Filtration.jpeg";
+import oilSkimmer from "@/public/images/Oil Skimmer.jpg";
 
 const goTo = (event: any) => {
   event.preventDefault();
@@ -14,22 +14,20 @@ const goTo = (event: any) => {
 };
 
 export default function Carousel() {
-
   return (
     <section className=" flex justify-center p-4 md:p-10  ">
       <div className="carousel carousel-center bg-neutral rounded-box max-w-screen  space-x-4 p-4 gap-4 shadow-sm  w-11/12">
         <div className="carousel-item">
           <Link href="/blog/Coolant_Filter">
-          <img
-          src = {coolantFilter.src}
-            className=" h-56 w-auto rounded-box bg-cover shadow-md hover:scale-110 transform transition-transform"
-          />
+            <img
+              src={coolantFilter.src}
+              className=" h-56 w-auto rounded-box bg-cover shadow-md hover:scale-110 transform transition-transform"
+            />
           </Link>
         </div>
         <div className="carousel-item">
           <img
-            src= {oilSkimmer.src}
-            
+            src={oilSkimmer.src}
             className=" h-56 w-auto rounded-box bg-cover shadow-md hover:scale-110 transform transition-transform"
           />
         </div>
