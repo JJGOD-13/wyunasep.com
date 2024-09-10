@@ -19,7 +19,7 @@ export default function About() {
         <div className="hero-content max-w-xl text-center">
           <div className="">
             <h1 className=" text-4xl  md:text-5xl md:text-nowrap  md:font-bold ">Better separation solutions</h1>
-            <p className="py-6 text-neutral-content"> Wyuna Seperation Technology is India's premier liquid separation solutions provider.</p>
+            <p className="py-6 text-neutral-content"> Wyuna Separation Technology is India's premier liquid separation solutions provider.</p>
           </div>
         </div>
       </div>
@@ -39,8 +39,19 @@ export default function About() {
 
       </section >
 
-      {/* <div dangerouslySetInnerHTML={{ __html: pageHTML}}>
-      </div> */}
+      <section className=" bg-base text-base-content">
+        <div className=" justify-center p-20  flex md:justify-start  md:bg-base md:min-h-screen md:rounded-xl md:p-40   ">
+          <div className="">
+            <div className=" max-w-xl ">
+              <h2 className=" text-4xl md:font-bold justify-center md:justify-start ">Our Vision</h2>
+            </div>
+
+          </div>
+        </div>
+
+      </section >
+
+
     </>
   )
 }
