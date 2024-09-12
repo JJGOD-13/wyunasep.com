@@ -27,14 +27,14 @@ export async function generateMetaData({ params, searchParams }) {
   };
 }
 
-export default async function Blog(props) {
+export default async function Blog(props: any) {
   const slug = props.params.slug;
   const post = getPostContent(slug);
 
   return (
     <main className=" flex justify-center p-10">
       <div className="">
-        <article className=" prose prose-neutral prose-md md:prose-lg prose-h1:text-5xl prose-h2:underline prose-h2:underline-offset-4 prose-h2:text-4xl prose-h2:text-primary-content">
+        <article className=" prose prose-neutral prose-md md:prose-lg prose-h1:text-4xl prose-h2:underline prose-h2:underline-offset-4 prose-h2:text-3xl prose-h2:text-primary-content">
           <Markdown>{post.content}</Markdown>
         </article>
       </div>
