@@ -59,52 +59,55 @@ export default function About() {
         </div>
       </section>
 
-      <section className=" bg-base text-base-content">
-        <div className=" justify-center p-20  flex md:justify-start  md:bg-base md:min-h-screen md:rounded-xl md:p-40   ">
-          <div className="">
-            <div className=" max-w-xl ">
-              <h2 className=" text-4xl md:font-bold justify-center md:justify-start ">
-                Our Vision
-              </h2>
-              <div className=" py-8 text-md lg:text-lg md:py-6 font-thin lg:text-neutral-content">
-                <ul className=" list-disc  ">
-                  <li key={1}>
-                    To build a leading global business servicing the process
-                    industry using innovation to develop technology that
-                    provides tangible benefits for our customers.
-                  </li>
-                  <li key={1}>
-                    Since its establishment the purpose of the Company has been
-                    to increase the value of its shareholders’ investment by the
-                    generation of profits. The Company, through its employees,
-                    achieves this purpose by meeting the needs of customers for
-                    the products and services it offers.
-                  </li>
-                  <li key={1}>
-                    Since its establishment the purpose of the Company has been
-                    to increase the value of its shareholders’ investment by the
-                    generation of profits. The Company, through its employees,
-                    achieves this purpose by meeting the needs of customers for
-                    the products and services it offers.
-                  </li>
-                  <li key={1}>
-                    Wyuna Separation Technology places great emphasis on ethics
-                    that seek to minimise environmental impacts, in all aspects
-                    of our business, to the best of our ability. We understand
-                    that the industries we serve can potentially harm the
-                    quality of our earth / air and places a high priority in
-                    proactively identifying and responding to anticipated
-                    health, safety and environmental hazards. From the outset,
-                    we encourage partnerships between stakeholders, including
-                    our own teams of specialist engineers and consultants, our
-                    clients and the communities they serve, so that positive
-                    outcomes are achieved. We seek to fully comply with all
-                    government, industry and other codes to ensure we meet our
-                    obligations.
-                  </li>
-                </ul>
-              </div>
+      <section className=" text-primary-content p-10 ">
+        <h2 className=" text-center pt-10 pb-20 text-4xl ">Our Values</h2>
+        <div className=" flex justify-center text-pretty">
+          <div className=" text-pretty md:grid md:grid-cols-2 md:grid-rows-2 md:gap-10 md:p-4 md:align-middle ">
+            <div key={1} className=" bg-slate-200 rounded-md p-10 ">
+              <h3 className=" text-2xl ">Vision</h3>
+              <li className=" list-disc ">
+                To build a leading global business servicing the process
+                industry using innovation to develop technology that provides
+                tangible benefits for our customers.
+              </li>
             </div>
+            <div key={2} className=" bg-slate-200 rounded-md p-10">
+              <h3 className=" text-2xl ">Purpose</h3>
+              <li className=" list-disc ">
+                Since its establishment the purpose of the Company has been to
+                increase the value of its shareholders’ investment by the
+                generation of profits. The Company, through its employees,
+                achieves this purpose by meeting the needs of customers for the
+                products and services it offers.
+              </li>
+            </div>
+            {/* <div key={3} className=" bg-slate-200 rounded-md p-10"> */}
+            {/*   <h3 className=" text-2xl ">Environmental Responsibility</h3> */}
+            {/*   <li className=" list-disc "> */}
+            {/*     Since its establishment the purpose of the Company has been to */}
+            {/*     increase the value of its shareholders’ investment by the */}
+            {/*     generation of profits. The Company, through its employees, */}
+            {/*     achieves this purpose by meeting the needs of customers for the */}
+            {/*     products and services it offers. */}
+            {/*   </li> */}
+            {/* </div> */}
+            {/* <div key={4} className=" bg-slate-200 rounded-md p-10"> */}
+            {/*   <h3 className=" text-2xl ">Strategy</h3> */}
+            {/*   <li className=" list-disc "> */}
+            {/*     Wyuna Separation Technology places great emphasis on ethics that */}
+            {/*     seek to minimise environmental impacts, in all aspects of our */}
+            {/*     business, to the best of our ability. We understand that the */}
+            {/*     industries we serve can potentially harm the quality of our */}
+            {/*     earth / air and places a high priority in proactively */}
+            {/*     identifying and responding to anticipated health, safety and */}
+            {/*     environmental hazards. From the outset, we encourage */}
+            {/*     partnerships between stakeholders, including our own teams of */}
+            {/*     specialist engineers and consultants, our clients and the */}
+            {/*     communities they serve, so that positive outcomes are achieved. */}
+            {/*     We seek to fully comply with all government, industry and other */}
+            {/*     codes to ensure we meet our obligations. */}
+            {/*   </li> */}
+            {/* </div> */}
           </div>
         </div>
       </section>
