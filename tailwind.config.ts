@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import daisyui from 'daisyui'
+import daisyui from "daisyui";
 
 const config: Config = {
   content: [
@@ -16,26 +16,25 @@ const config: Config = {
       },
     },
   },
-  plugins: [daisyui],
+  plugins: [daisyui, require("@tailwindcss/typography")],
 
   daisyui: {
     themes: [
       {
         mytheme: {
-
-          "primary": "#dbeafe",
+          primary: "#dbeafe",
 
           "primary-content": "#111827",
 
-          "secondary": "#60a5fa",
+          secondary: "#60a5fa",
 
           "secondary-content": "#f3f4f6",
 
-          "accent": "#34d399",
+          accent: "#34d399",
 
           "accent-content": "#111827",
 
-          "neutral": "#e5e7eb",
+          neutral: "#e5e7eb",
 
           "neutral-content": "#121313",
 
@@ -47,25 +46,25 @@ const config: Config = {
 
           "base-content": "#1c1917",
 
-          "info": "#bfdbfe",
+          info: "#bfdbfe",
 
           "info-content": "#0d1116",
 
-          "success": "#bbf7d0",
+          success: "#bbf7d0",
 
           "success-content": "#0d1510",
 
-          "warning": "#fde68a",
+          warning: "#fde68a",
 
           "warning-content": "#161307",
 
-          "error": "#fca5a5",
+          error: "#fca5a5",
 
           "error-content": "#160a0a",
         },
       },
     ],
-  darktheme: "dark",
-}
+    darktheme: "dark",
+  },
 };
 export default config;

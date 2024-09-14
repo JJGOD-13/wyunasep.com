@@ -1,5 +1,5 @@
 import Footer from "@/components/footer";
-import { NavbarLinks} from "@/components/navbar";
+import { NavbarLinks } from "@/components/navbar";
 import NavBar from "@/components/navbar";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
@@ -9,7 +9,7 @@ import "./globals.css";
 
 const inter = Roboto({
   subsets: ["latin"],
-  weight: "500"
+  weight: "500",
 });
 
 export const metadata: Metadata = {
@@ -28,20 +28,22 @@ export default function RootLayout({
         <div className=" drawer drawer-end bg-base-100 ">
           <input id="my-drawer" type="checkbox" className=" drawer-toggle" />
           <div className=" drawer-content">
-        <NavBar />
-        {children}
-        <Footer />
+            <NavBar />
+            {children}
+            <Footer />
           </div>
           <div className=" drawer-side ">
-          <label htmlFor="my-drawer" aria-label="close sidebar" className=" drawer-overlay "></label>
-          <ul className="menu bg-base-200 text-base-content min-h-full w-60 p-4 justify-center gap-10 text-5xl font-bold">
-          <NavbarLinks />
-          </ul>
+            <label
+              htmlFor="my-drawer"
+              aria-label="close sidebar"
+              className=" drawer-overlay "
+            ></label>
+            <ul className="menu bg-base-200 text-base-content min-h-full w-60 p-4 justify-center gap-10 text-5xl font-bold">
+              <NavbarLinks />
+            </ul>
+          </div>
         </div>
-        </div>
-       
       </body>
     </html>
   );
 }
-
