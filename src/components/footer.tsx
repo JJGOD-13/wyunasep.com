@@ -19,14 +19,13 @@ export default function Footer() {
         <Link href="/products" className="link link-hover">
           Products
         </Link>
-        <Link href="/seperators" className="link link-hover">
+        <Link href="/blog" className="link link-hover">
           Oil Water Seperators
         </Link>
-        <Link href="/skimmers" className="link link-hover">
+        <Link href="/blog/Oil-Skimmer" className="link link-hover">
           Oil Skimmers
         </Link>
       </nav>
     </footer>
   );
 }
-
